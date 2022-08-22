@@ -73,6 +73,19 @@ export default function(model) {
         },
       ],
     },
+    {
+      key: 'gatewayManagementVirtual',
+      children: [
+        {
+          key: 'routes',
+          url: '/routes',
+        },
+        {
+          key: 'instances',
+          url: '/instances',
+        },
+      ],
+    },
     globalAdmin ? authorityControlMenu : undefined,
     {
       key: 'namespace',
